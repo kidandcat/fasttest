@@ -23,3 +23,5 @@ require (
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/term v0.1.0 // indirect
 )
+
+replace github.com/kidandcat/testit => .

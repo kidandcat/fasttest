@@ -173,6 +173,14 @@
             color: #10b981;
         }
         
+        .code-example .selector {
+            color: #3b82f6;
+        }
+        
+        .code-example .url {
+            color: #8b5cf6;
+        }
+        
         /* Features */
         .features {
             padding: 4rem 0;
@@ -384,12 +392,12 @@
             <div class="code-example">
                 <pre><span class="comment"># login.test</span>
 <span class="keyword">test</span> <span class="string">"User can login successfully"</span>
-  <span class="keyword">navigate</span> <span class="string">"https://myapp.com/login"</span>
-  <span class="keyword">type</span> <span class="string">"#email"</span> <span class="string">"user@example.com"</span>
-  <span class="keyword">type</span> <span class="string">"#password"</span> <span class="string">"secure123"</span>
-  <span class="keyword">click</span> <span class="string">"#login-button"</span>
-  <span class="keyword">wait_for</span> <span class="string">".dashboard"</span>
-  <span class="keyword">assert_text</span> <span class="string">".welcome"</span> <span class="string">"Welcome back!"</span>
+  <span class="keyword">navigate</span> <span class="url">https://myapp.com/login</span>
+  <span class="keyword">type</span> <span class="selector">#email</span> user@example.com
+  <span class="keyword">type</span> <span class="selector">#password</span> secure123
+  <span class="keyword">click</span> <span class="selector">#login-button</span>
+  <span class="keyword">wait_for</span> <span class="selector">.dashboard</span>
+  <span class="keyword">assert_text</span> <span class="selector">.welcome</span> <span class="string">"Welcome back!"</span>
   <span class="keyword">screenshot</span>  <span class="comment"># Auto-names: User_can_login_successfully.png</span></pre>
             </div>
         </div>
